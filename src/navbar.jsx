@@ -6,8 +6,7 @@ export default function navbar({isAuth=false ,user, onLogout}) {
   return (
     <div> <div className="navbar bg-base-100 rounded-2xl shadow-sm socialmedianav justify-start items-center">
   <div className="flex-2 items-center">
-
-    <div className="flex items-center gap-2">
+<Link to="/"><div className="flex items-center gap-2">
       
       <img 
         src={HyiconLogo} 
@@ -15,7 +14,7 @@ export default function navbar({isAuth=false ,user, onLogout}) {
         className="w-10 h-10 rounded-lg"
       />
       <span className="text-xl font-bold text-primary">HELLOLY</span>
-    </div>
+    </div></Link>
   </div>
   
   <div className="flex gap-2">
@@ -32,13 +31,7 @@ export default function navbar({isAuth=false ,user, onLogout}) {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li>
-          <a className="justify-between">
-            Profile
-            <span className="badge">New</span>
-          </a>
-        </li>
-        <li><a>Settings</a></li>
+        
         <li><a onClick={onLogout}>Logout</a></li>
       </ul>
     </div>):(
