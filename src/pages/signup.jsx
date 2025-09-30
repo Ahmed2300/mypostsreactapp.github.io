@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom';
-import axios from 'axios';
+import axios from 'axios'
+import HyiconLogo from '../assets/Hyicon.png'
 
 export default function Signup({ onLogin }) {
   const navigate = useNavigate();
@@ -190,7 +191,7 @@ const fileToDataUrl = (file) =>
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-2 mb-4">
             <img 
-              src="./../src/assets/Hyicon.png" 
+              src={HyiconLogo} 
               alt="HELLOLY Logo" 
               className="w-12 h-12 rounded-lg"
             />

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
+import HyiconLogo from '../assets/Hyicon.png'
 
 export default function SiginPage({ onLogin }) {
   const navigate = useNavigate();
@@ -95,7 +96,7 @@ else{
           {/* Logo Section */}
           <div className="text-center mb-8">
             <img 
-              src="./../src/assets/Hyicon.png" 
+              src={HyiconLogo} 
               alt="HELLOLY Logo" 
               className="w-20 h-20 rounded-xl mb-4 shadow-lg mx-auto"
             />

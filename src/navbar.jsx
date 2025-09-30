@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import SiginPage from './pages/sigin_page'
+import HyiconLogo from './assets/Hyicon.png'
 
 export default function navbar({isAuth=false ,user, onLogout}) {
   return (
@@ -10,7 +10,7 @@ export default function navbar({isAuth=false ,user, onLogout}) {
     <div className="flex items-center gap-2">
       
       <img 
-        src="./../src/assets/Hyicon.png" 
+        src={HyiconLogo} 
         alt="HELLOLY Logo" 
         className="w-10 h-10 rounded-lg"
       />
