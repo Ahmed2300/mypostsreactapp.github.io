@@ -51,7 +51,7 @@ export default function Postcard({dataa =[] , isAuth, user} ) {
       if (response.ok){
 
     const data = await response.json()
-      setData(data.filter(post => post !== null && post !== undefined));
+      setData(data.filter(post => post !== null && post !== undefined).reverse());
       setLoading(false);
       console.log(data);
       console.log(dataa);
